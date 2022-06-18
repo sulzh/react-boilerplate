@@ -7,7 +7,8 @@
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
     "dev:hot": "npm run dev -- --hot",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./"
   },
   "author": "Sulzh",
   "license": "ISC",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
     "@babel/plugin-proposal-class-properties": "^7.17.12",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
@@ -30,6 +32,8 @@
     "@testing-library/react": "^13.3.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.1",
