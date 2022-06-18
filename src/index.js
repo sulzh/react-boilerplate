@@ -1,3 +1,7 @@
-import getGreeting from './greet';
+import React from 'react';
+import '@babel/polyfill';
+import RectDOM from 'react-dom';
 
-console.log(getGreeting());
+import App from './App';
+
+RectDOM.render(<App />, document.getElementById('app'));
