@@ -9,12 +9,8 @@
 		"dev:hot": "npm run dev -- --hot",
 		"test": "jest",
 		"format": "pretty-quick",
-		"lint": "eslint ./"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "pretty-quck --staged && npm run lint && npm run test"
-		}
+		"lint": "eslint ./",
+		"pre-commit": "npm test && eslint"
 	},
 	"author": "Sulzh",
 	"license": "ISC",
